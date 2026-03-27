@@ -144,23 +144,6 @@
                   stroke="#A68C54"
                   stroke-width="1.8"
                 >
-                  <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
-                  <polyline points="9 22 9 12 15 12 15 22" />
-                </svg>
-              </div>
-              <h3>20+</h3>
-              <p>Lenders on our panel</p>
-            </div>
-            <div class="hero-stat-card">
-              <div class="hero-stat-icon">
-                <svg
-                  width="22"
-                  height="22"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="#A68C54"
-                  stroke-width="1.8"
-                >
                   <circle cx="12" cy="12" r="10" />
                   <polyline points="12 6 12 12 16 14" />
                 </svg>
@@ -248,22 +231,6 @@
               />
             </svg>
             Ongoing Client Care
-          </div>
-          <div class="trust-item">
-            <svg
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-            >
-              <rect x="1" y="3" width="15" height="13" />
-              <polygon points="16 8 20 8 23 11 23 16 16 16 16 8" />
-              <circle cx="5.5" cy="18.5" r="2.5" />
-              <circle cx="18.5" cy="18.5" r="2.5" />
-            </svg>
-            South East London Specialists
           </div>
         </div>
       </div>
@@ -472,6 +439,296 @@
           </div>
         </div>
       </section>
+
+      <!-- CALCULATOR SECTION -->
+      <section class="section calc-section">
+        <div class="section-inner">
+          <div class="calc-header anim">
+            <div class="section-label">Mortgage Calculator</div>
+            <h2 class="section-title">Calculate your mortgage payments</h2>
+            <p class="section-intro">
+              Get an instant estimate of your monthly repayments. Speak to one
+              of our advisers to explore your full range of options.
+            </p>
+          </div>
+
+          <div class="calc-wrapper anim" style="transition-delay: 0.15s">
+            <!-- LEFT: INPUTS -->
+            <div class="calc-inputs">
+              <div class="calc-field-group">
+                <label class="calc-label">
+                  Loan Amount
+                  <span
+                    class="calc-tooltip"
+                    title="The total amount you wish to borrow"
+                  >
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <circle cx="12" cy="12" r="10" />
+                      <line x1="12" y1="16" x2="12" y2="12" />
+                      <line x1="12" y1="8" x2="12.01" y2="8" />
+                    </svg>
+                  </span>
+                </label>
+                <div class="calc-input-wrap">
+                  <span class="calc-prefix">£</span>
+                  <input
+                    class="calc-input"
+                    type="number"
+                    id="calc-amount"
+                    value="250000"
+                    min="10000"
+                    max="5000000"
+                    step="1000"
+                  />
+                </div>
+                <input
+                  class="calc-range"
+                  type="range"
+                  id="calc-amount-range"
+                  min="10000"
+                  max="2000000"
+                  step="5000"
+                  value="250000"
+                />
+                <div class="calc-range-labels">
+                  <span>£10k</span><span>£2m</span>
+                </div>
+              </div>
+
+              <div class="calc-field-group">
+                <label class="calc-label">
+                  Interest Rate
+                  <span
+                    class="calc-tooltip"
+                    title="The annual interest rate on your mortgage"
+                  >
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <circle cx="12" cy="12" r="10" />
+                      <line x1="12" y1="16" x2="12" y2="12" />
+                      <line x1="12" y1="8" x2="12.01" y2="8" />
+                    </svg>
+                  </span>
+                </label>
+                <div class="calc-input-wrap">
+                  <span class="calc-prefix">%</span>
+                  <input
+                    class="calc-input"
+                    type="number"
+                    id="calc-rate"
+                    value="4.5"
+                    min="0.1"
+                    max="20"
+                    step="0.05"
+                  />
+                </div>
+                <input
+                  class="calc-range"
+                  type="range"
+                  id="calc-rate-range"
+                  min="0.5"
+                  max="15"
+                  step="0.05"
+                  value="4.5"
+                />
+                <div class="calc-range-labels">
+                  <span>0.5%</span><span>15%</span>
+                </div>
+              </div>
+
+              <div class="calc-field-group">
+                <label class="calc-label">
+                  Mortgage Term
+                  <span
+                    class="calc-tooltip"
+                    title="The number of years over which you repay the mortgage"
+                  >
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <circle cx="12" cy="12" r="10" />
+                      <line x1="12" y1="16" x2="12" y2="12" />
+                      <line x1="12" y1="8" x2="12.01" y2="8" />
+                    </svg>
+                  </span>
+                </label>
+                <div class="calc-input-wrap">
+                  <input
+                    class="calc-input"
+                    type="number"
+                    id="calc-term"
+                    value="25"
+                    min="1"
+                    max="40"
+                    step="1"
+                    style="padding-left: 16px"
+                  />
+                  <span class="calc-suffix">years</span>
+                </div>
+                <input
+                  class="calc-range"
+                  type="range"
+                  id="calc-term-range"
+                  min="1"
+                  max="40"
+                  step="1"
+                  value="25"
+                />
+                <div class="calc-range-labels">
+                  <span>1 yr</span><span>40 yrs</span>
+                </div>
+              </div>
+
+              <div class="calc-field-group">
+                <label class="calc-label">Repayment Type</label>
+                <div class="calc-toggle-group">
+                  <button
+                    class="calc-toggle active"
+                    id="toggle-repayment"
+                    onclick="setRepaymentType('repayment')"
+                  >
+                    Repayment
+                  </button>
+                  <button
+                    class="calc-toggle"
+                    id="toggle-interest"
+                    onclick="setRepaymentType('interest')"
+                  >
+                    Interest Only
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- end inputs -->
+
+            <!-- RIGHT: RESULTS -->
+            <div class="calc-results">
+              <div class="calc-results-top">
+                <p class="calc-results-label">Monthly Payment</p>
+                <div class="calc-monthly" id="calc-monthly">£0</div>
+                <p class="calc-repayment-note" id="calc-repayment-note">
+                  Based on a repayment mortgage
+                </p>
+              </div>
+
+              <div class="calc-breakdown">
+                <div class="calc-breakdown-item">
+                  <span class="calc-breakdown-label">Total Amount Repaid</span>
+                  <span class="calc-breakdown-value" id="calc-total">£0</span>
+                </div>
+                <div class="calc-breakdown-divider"></div>
+                <div class="calc-breakdown-item">
+                  <span class="calc-breakdown-label">Total Interest Paid</span>
+                  <span class="calc-breakdown-value" id="calc-interest"
+                    >£0</span
+                  >
+                </div>
+                <div class="calc-breakdown-divider"></div>
+                <div class="calc-breakdown-item">
+                  <span class="calc-breakdown-label">Capital Borrowed</span>
+                  <span class="calc-breakdown-value" id="calc-capital">£0</span>
+                </div>
+              </div>
+
+              <!-- DONUT CHART -->
+              <div class="calc-chart-wrap">
+                <svg class="calc-donut" viewBox="0 0 120 120" id="calc-donut">
+                  <circle
+                    class="calc-donut-bg"
+                    cx="60"
+                    cy="60"
+                    r="48"
+                    fill="none"
+                    stroke-width="16"
+                  />
+                  <circle
+                    class="calc-donut-capital"
+                    cx="60"
+                    cy="60"
+                    r="48"
+                    fill="none"
+                    stroke-width="16"
+                    stroke-dasharray="0 301.6"
+                    stroke-dashoffset="75.4"
+                    id="calc-donut-capital"
+                  />
+                  <circle
+                    class="calc-donut-interest"
+                    cx="60"
+                    cy="60"
+                    r="48"
+                    fill="none"
+                    stroke-width="16"
+                    stroke-dasharray="0 301.6"
+                    stroke-dashoffset="75.4"
+                    id="calc-donut-interest"
+                  />
+                </svg>
+                <div class="calc-chart-legend">
+                  <span class="calc-legend-item"
+                    ><i
+                      class="calc-legend-dot"
+                      style="background: var(--white)"
+                    ></i
+                    >Capital</span
+                  >
+                  <span class="calc-legend-item"
+                    ><i
+                      class="calc-legend-dot"
+                      style="background: var(--gold)"
+                    ></i
+                    >Interest</span
+                  >
+                </div>
+              </div>
+
+              <div class="calc-disclaimer">
+                This calculator provides an estimate only. Your actual payments
+                may vary. Speak to an adviser for a personalised illustration.
+              </div>
+
+              <button
+                class="btn-primar speak"
+                style="width: 100%; justify-content: center; margin-top: 4px"
+                onclick="showPage('contact')"
+              >
+                Speak to an Adviser
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </button>
+            </div>
+            <!-- end results -->
+          </div>
+          <!-- end wrapper -->
+        </div>
+      </section>
+      <!-- END CALCULATOR SECTION -->
 
       <!-- TESTIMONIALS -->
       <section class="section testimonials-section">
@@ -997,13 +1254,7 @@
                     monthly outgoings.
                   </p>
                 </div>
-                <div class="feature-card">
-                  <h3>Equity Release</h3>
-                  <p>
-                    Unlock capital tied up in your home for home improvements,
-                    debt consolidation or other financial goals.
-                  </p>
-                </div>
+
                 <div class="feature-card">
                   <h3>Home Moving Mortgage</h3>
                   <p>
@@ -1788,7 +2039,7 @@
               "
             >
               At Onyx Mortgage Finance, we build a lasting relationship by
-              providing a reliable service to our clients
+              providing a reliable services to our clients
             </p>
           </div>
           <div class="footer-col">
@@ -1928,6 +2179,115 @@
           }
         });
       }
+
+      // calculator
+      (function () {
+        let repaymentType = 'repayment';
+
+        function fmt(n) {
+          return (
+            '£' +
+            n.toLocaleString('en-GB', {
+              minimumFractionDigits: 2,
+              maximumFractionDigits: 2,
+            })
+          );
+        }
+
+        function calculate() {
+          const P =
+            parseFloat(document.getElementById('calc-amount').value) || 0;
+          const annualRate =
+            parseFloat(document.getElementById('calc-rate').value) || 0;
+          const years =
+            parseFloat(document.getElementById('calc-term').value) || 1;
+          const n = years * 12;
+          const r = annualRate / 100 / 12;
+
+          let monthly, totalPaid, totalInterest;
+
+          if (repaymentType === 'interest') {
+            monthly = P * r;
+            totalPaid = monthly * n + P;
+            totalInterest = monthly * n;
+          } else {
+            if (r === 0) {
+              monthly = P / n;
+            } else {
+              monthly =
+                (P * (r * Math.pow(1 + r, n))) / (Math.pow(1 + r, n) - 1);
+            }
+            totalPaid = monthly * n;
+            totalInterest = totalPaid - P;
+          }
+
+          document.getElementById('calc-monthly').textContent = fmt(monthly);
+          document.getElementById('calc-total').textContent = fmt(totalPaid);
+          document.getElementById('calc-interest').textContent =
+            fmt(totalInterest);
+          document.getElementById('calc-capital').textContent = fmt(P);
+
+          // Donut chart
+          const circumference = 2 * Math.PI * 48; // 301.6
+          const capitalFrac = totalPaid > 0 ? P / totalPaid : 0;
+          const interestFrac = totalPaid > 0 ? totalInterest / totalPaid : 0;
+          const capitalLen = capitalFrac * circumference;
+          const interestLen = interestFrac * circumference;
+
+          const capEl = document.getElementById('calc-donut-capital');
+          const intEl = document.getElementById('calc-donut-interest');
+
+          capEl.setAttribute(
+            'stroke-dasharray',
+            `${capitalLen} ${circumference - capitalLen}`,
+          );
+          capEl.setAttribute('stroke-dashoffset', circumference * 0.25); // start at top
+
+          intEl.setAttribute(
+            'stroke-dasharray',
+            `${interestLen} ${circumference - interestLen}`,
+          );
+          intEl.setAttribute(
+            'stroke-dashoffset',
+            circumference * 0.25 - capitalLen,
+          );
+        }
+
+        function syncRange(inputId, rangeId) {
+          const input = document.getElementById(inputId);
+          const range = document.getElementById(rangeId);
+          input.addEventListener('input', () => {
+            range.value = input.value;
+            calculate();
+          });
+          range.addEventListener('input', () => {
+            input.value = range.value;
+            calculate();
+          });
+        }
+
+        window.setRepaymentType = function (type) {
+          repaymentType = type;
+          document
+            .getElementById('toggle-repayment')
+            .classList.toggle('active', type === 'repayment');
+          document
+            .getElementById('toggle-interest')
+            .classList.toggle('active', type === 'interest');
+          document.getElementById('calc-repayment-note').textContent =
+            type === 'interest'
+              ? 'Based on an interest only mortgage'
+              : 'Based on a repayment mortgage';
+          calculate();
+        };
+
+        syncRange('calc-amount', 'calc-amount-range');
+        syncRange('calc-rate', 'calc-rate-range');
+        syncRange('calc-term', 'calc-term-range');
+
+        // Run on load
+        if (document.getElementById('calc-amount')) calculate();
+      })();
 
       // INIT
       buildPartners();
