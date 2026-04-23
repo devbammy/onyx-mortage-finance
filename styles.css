@@ -9,6 +9,7 @@
   --text: #663068;
   --text-light: #6b6b6b;
   --border: #e8e0d0;
+  --border-color: #e0e0e0;
 }
 
 * {
@@ -1796,6 +1797,44 @@ footer {
 
 .privacy-section ul li:last-child {
   border-bottom: none;
+}
+
+.security-notice {
+  margin-top: 80px;
+  padding: 30px;
+  background-color: var(--accent-bg);
+  border-radius: 8px;
+  border-left: 4px solid var(--primary-color);
+}
+
+.security-notice h3 {
+  margin-top: 0;
+  color: var(--primary-color);
+}
+
+.contact-table-wrapper {
+  margin-top: 60px;
+  overflow-x: auto;
+}
+
+.contact-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 0.95rem;
+}
+
+.contact-table th,
+.contact-table td {
+  text-align: left;
+  padding: 15px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.contact-table th {
+  background-color: var(--gold);
+  color: var(--primary-color);
+  font-weight: 600;
 }
 
 /* RESPONSIVE */

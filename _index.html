@@ -1,0 +1,2375 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Onyx Mortgage Finance – Your mortgage, handled with precision and clarity
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./favicon.jpg" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav id="main-nav">
+      <div class="nav-inner">
+        <a class="nav-logo" onclick="showPage('home')">
+          <div class="nav-logo-mark">
+            <img src="./logos/logo.png" alt="site logo" />
+          </div>
+        </a>
+        <ul class="nav-links">
+          <li><a onclick="showPage('home')" id="nav-home">Home</a></li>
+          <li><a onclick="showPage('first-time')">First Time Buyers</a></li>
+          <li><a onclick="showPage('homeowners')">Existing Homeowners</a></li>
+          <li><a onclick="showPage('investors')">Property Investors</a></li>
+          <li><a onclick="showPage('protection')">Protection</a></li>
+          <li>
+            <a onclick="showPage('contact')" class="nav-cta">Get in Touch</a>
+          </li>
+        </ul>
+        <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobile-menu">
+      <a
+        onclick="
+          showPage('home');
+          toggleMenu();
+        "
+        >Home</a
+      >
+      <a
+        onclick="
+          showPage('first-time');
+          toggleMenu();
+        "
+        >First Time Buyers</a
+      >
+      <a
+        onclick="
+          showPage('homeowners');
+          toggleMenu();
+        "
+        >Existing Homeowners</a
+      >
+      <a
+        onclick="
+          showPage('investors');
+          toggleMenu();
+        "
+        >Property Investors</a
+      >
+      <a
+        onclick="
+          showPage('protection');
+          toggleMenu();
+        "
+        >Protection</a
+      >
+      <a
+        onclick="
+          showPage('privacy');
+          toggleMenu();
+        "
+        >Privacy Notice</a
+      >
+      <a
+        onclick="
+          showPage('contact');
+          toggleMenu();
+        "
+        >Get in Touch</a
+      >
+    </div>
+
+    <!-- ==================== PAGE: HOME ==================== -->
+    <div id="page-home" class="page active">
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-bg-pattern"></div>
+        <div class="hero-bg-dots"></div>
+        <div class="hero-inner">
+          <div class="hero-content">
+            <div class="hero-label">Whole of Market Mortgage Brokers</div>
+            <h1>Your mortgage, handled with <em>precision</em> and clarity.</h1>
+            <p>
+              Onyx Mortgage Finance offers a comprehensive range of mortgage and
+              protection solutions tailored to your financial situation —
+              whether you're stepping onto the property ladder for the first
+              time, remortgaging, or expanding your property investment
+              portfolio.
+            </p>
+            <div class="hero-buttons">
+              <button class="btn-primary" onclick="showPage('contact')">
+                Book a Consultation
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </button>
+              <button class="btn-secondary" onclick="showPage('first-time')">
+                First Time Buyer Guide
+              </button>
+            </div>
+            <div class="hero-risk">
+              <strong>Risk Warning:</strong> Your home may be repossessed if you
+              do not keep up repayments on your mortgage or any other loan
+              secured against it.
+            </div>
+          </div>
+          <div class="hero-stats">
+            <div class="hero-stat-card">
+              <div class="hero-stat-icon">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#A68C54"
+                  stroke-width="1.8"
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <polyline points="12 6 12 12 16 14" />
+                </svg>
+              </div>
+              <h3>End-to-End</h3>
+              <p>Support from first call to completion</p>
+            </div>
+            <div class="hero-stat-card">
+              <div class="hero-stat-icon">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#A68C54"
+                  stroke-width="1.8"
+                >
+                  <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                  <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" />
+                </svg>
+              </div>
+              <h3>FCA</h3>
+              <p>Authorised & regulated broker</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TRUST BAR -->
+      <div class="trust-bar">
+        <div class="trust-bar-inner">
+          <div class="trust-item">
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+            </svg>
+            FCA Authorised & Regulated
+          </div>
+          <div class="trust-item">
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <polyline points="9 11 12 14 22 4" />
+              <path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11" />
+            </svg>
+            Whole of Market Access
+          </div>
+          <div class="trust-item">
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <circle cx="12" cy="12" r="10" />
+              <path d="M12 8v4l3 3" />
+            </svg>
+            No-Obligation Consultation
+          </div>
+          <div class="trust-item">
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"
+              />
+            </svg>
+            Ongoing Client Care
+          </div>
+        </div>
+      </div>
+
+      <!-- SERVICES -->
+      <section class="section services-section">
+        <div class="section-inner">
+          <div class="services-header">
+            <div>
+              <div class="section-label anim">What We Do</div>
+              <h2 class="section-title anim" style="transition-delay: 0.1s">
+                Specialist mortgage services,<br />built around you
+              </h2>
+              <p class="section-intro anim" style="transition-delay: 0.2s">
+                As a dedicated whole-of-market mortgage broker, we work closely
+                with each client to identify the right solution — not just the
+                most convenient one.
+              </p>
+            </div>
+          </div>
+          <div class="services-grid">
+            <div class="service-card anim" onclick="showPage('first-time')">
+              <div class="service-icon">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#A68C54"
+                  stroke-width="1.8"
+                >
+                  <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+                  <polyline points="9 22 9 12 15 12 15 22" />
+                </svg>
+              </div>
+              <div class="service-sub">Service</div>
+              <h3>First Time Buyers</h3>
+              <p>
+                Buying your first home is both exciting and complex. We take the
+                confusion out of the process, guiding you through every step
+                from credit assessment to completion.
+              </p>
+              <div class="service-link">
+                Getting onto the property ladder
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </div>
+            </div>
+            <div
+              class="service-card anim"
+              style="transition-delay: 0.1s"
+              onclick="showPage('homeowners')"
+            >
+              <div class="service-icon">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#A68C54"
+                  stroke-width="1.8"
+                >
+                  <polyline points="1 4 1 10 7 10" />
+                  <path d="M3.51 15a9 9 0 102.13-9.36L1 10" />
+                </svg>
+              </div>
+              <div class="service-sub">Service</div>
+              <h3>Existing Homeowners</h3>
+              <p>
+                Whether you're looking to release equity, secure a better rate,
+                or move to a new property, we search the whole market to find
+                the most competitive deal.
+              </p>
+              <div class="service-link">
+                Remortgaging & home moving
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </div>
+            </div>
+            <div
+              class="service-card anim"
+              style="transition-delay: 0.2s"
+              onclick="showPage('investors')"
+            >
+              <div class="service-icon">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#A68C54"
+                  stroke-width="1.8"
+                >
+                  <rect x="2" y="3" width="20" height="14" rx="2" />
+                  <line x1="8" y1="21" x2="16" y2="21" />
+                  <line x1="12" y1="17" x2="12" y2="21" />
+                </svg>
+              </div>
+              <div class="service-sub">Service</div>
+              <h3>Property Investors</h3>
+              <p>
+                From single buy-to-let properties to complex portfolios, we
+                manage your mortgage requirements with expert knowledge of the
+                investment lending market.
+              </p>
+              <div class="service-link">
+                Buy to Let mortgages
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- APPROACH -->
+      <section class="section approach-section">
+        <div class="section-inner">
+          <div class="section-label anim">The Onyx Approach</div>
+          <h2 class="section-title anim" style="transition-delay: 0.1s">
+            Your journey with us, from<br />first call to completion
+          </h2>
+          <p class="section-intro anim" style="transition-delay: 0.2s">
+            We provide not just mortgage advice, but ongoing client care
+            throughout the life of your mortgage and beyond.
+          </p>
+
+          <div class="approach-grid">
+            <div class="approach-steps anim" style="transition-delay: 0.1s">
+              <div class="approach-step">
+                <div class="step-num">01</div>
+                <div class="step-content">
+                  <h4>Ongoing Client Care</h4>
+                  <p>
+                    Our relationship doesn't end at completion. We support
+                    clients with queries for the foreseeable months and years
+                    ahead, including proactive contact when a deal is
+                    approaching expiry.
+                  </p>
+                </div>
+              </div>
+              <div class="approach-step">
+                <div class="step-num">02</div>
+                <div class="step-content">
+                  <h4>Whole of Market Access</h4>
+                  <p>
+                    We search across a significant panel of lenders — not just a
+                    selected few — to ensure you receive the most competitive
+                    rate available for your specific needs and profile.
+                  </p>
+                </div>
+              </div>
+              <div class="approach-step">
+                <div class="step-num">03</div>
+                <div class="step-content">
+                  <h4>Protection Planning</h4>
+                  <p>
+                    A mortgage is only part of the picture. We provide a full
+                    protection assessment to ensure you, your family, and your
+                    home are covered when life takes unexpected turns.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="anim" style="transition-delay: 0.25s">
+              <div class="approach-quote">
+                <blockquote>
+                  "Onyx Mortgage Finance found us a deal that saved over £200 a
+                  month without affecting our mortgage term. The clarity and
+                  care throughout the process was outstanding."
+                </blockquote>
+                <cite>— Client Testimonial</cite>
+              </div>
+              <div class="trust-statement">
+                <p>
+                  At Onyx Mortgage Finance, we build a lasting relationship by
+                  providing reliable services to our clients.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CALCULATOR SECTION -->
+      <section class="section calc-section">
+        <div class="section-inner">
+          <div class="calc-header anim">
+            <div class="section-label">Mortgage Calculator</div>
+            <h2 class="section-title">Calculate your mortgage payments</h2>
+            <p class="section-intro">
+              Get an instant estimate of your monthly repayments. Speak to one
+              of our advisers to explore your full range of options.
+            </p>
+          </div>
+
+          <div class="calc-wrapper anim" style="transition-delay: 0.15s">
+            <!-- LEFT: INPUTS -->
+            <div class="calc-inputs">
+              <div class="calc-field-group">
+                <label class="calc-label">
+                  Loan Amount
+                  <span
+                    class="calc-tooltip"
+                    title="The total amount you wish to borrow"
+                  >
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <circle cx="12" cy="12" r="10" />
+                      <line x1="12" y1="16" x2="12" y2="12" />
+                      <line x1="12" y1="8" x2="12.01" y2="8" />
+                    </svg>
+                  </span>
+                </label>
+                <div class="calc-input-wrap">
+                  <span class="calc-prefix">£</span>
+                  <input
+                    class="calc-input"
+                    type="number"
+                    id="calc-amount"
+                    value="250000"
+                    min="10000"
+                    max="5000000"
+                    step="1000"
+                  />
+                </div>
+                <input
+                  class="calc-range"
+                  type="range"
+                  id="calc-amount-range"
+                  min="10000"
+                  max="2000000"
+                  step="5000"
+                  value="250000"
+                />
+                <div class="calc-range-labels">
+                  <span>£10k</span><span>£2m</span>
+                </div>
+              </div>
+
+              <div class="calc-field-group">
+                <label class="calc-label">
+                  Interest Rate
+                  <span
+                    class="calc-tooltip"
+                    title="The annual interest rate on your mortgage"
+                  >
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <circle cx="12" cy="12" r="10" />
+                      <line x1="12" y1="16" x2="12" y2="12" />
+                      <line x1="12" y1="8" x2="12.01" y2="8" />
+                    </svg>
+                  </span>
+                </label>
+                <div class="calc-input-wrap">
+                  <span class="calc-prefix">%</span>
+                  <input
+                    class="calc-input"
+                    type="number"
+                    id="calc-rate"
+                    value="4.5"
+                    min="0.1"
+                    max="20"
+                    step="0.05"
+                  />
+                </div>
+                <input
+                  class="calc-range"
+                  type="range"
+                  id="calc-rate-range"
+                  min="0.5"
+                  max="15"
+                  step="0.05"
+                  value="4.5"
+                />
+                <div class="calc-range-labels">
+                  <span>0.5%</span><span>15%</span>
+                </div>
+              </div>
+
+              <div class="calc-field-group">
+                <label class="calc-label">
+                  Mortgage Term
+                  <span
+                    class="calc-tooltip"
+                    title="The number of years over which you repay the mortgage"
+                  >
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <circle cx="12" cy="12" r="10" />
+                      <line x1="12" y1="16" x2="12" y2="12" />
+                      <line x1="12" y1="8" x2="12.01" y2="8" />
+                    </svg>
+                  </span>
+                </label>
+                <div class="calc-input-wrap">
+                  <input
+                    class="calc-input"
+                    type="number"
+                    id="calc-term"
+                    value="25"
+                    min="1"
+                    max="40"
+                    step="1"
+                    style="padding-left: 16px"
+                  />
+                  <span class="calc-suffix">years</span>
+                </div>
+                <input
+                  class="calc-range"
+                  type="range"
+                  id="calc-term-range"
+                  min="1"
+                  max="40"
+                  step="1"
+                  value="25"
+                />
+                <div class="calc-range-labels">
+                  <span>1 yr</span><span>40 yrs</span>
+                </div>
+              </div>
+
+              <div class="calc-field-group">
+                <label class="calc-label">Repayment Type</label>
+                <div class="calc-toggle-group">
+                  <button
+                    class="calc-toggle active"
+                    id="toggle-repayment"
+                    onclick="setRepaymentType('repayment')"
+                  >
+                    Repayment
+                  </button>
+                  <button
+                    class="calc-toggle"
+                    id="toggle-interest"
+                    onclick="setRepaymentType('interest')"
+                  >
+                    Interest Only
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- end inputs -->
+
+            <!-- RIGHT: RESULTS -->
+            <div class="calc-results">
+              <div class="calc-results-top">
+                <p class="calc-results-label">Monthly Payment</p>
+                <div class="calc-monthly" id="calc-monthly">£0</div>
+                <p class="calc-repayment-note" id="calc-repayment-note">
+                  Based on a repayment mortgage
+                </p>
+              </div>
+
+              <div class="calc-breakdown">
+                <div class="calc-breakdown-item">
+                  <span class="calc-breakdown-label">Total Amount Repaid</span>
+                  <span class="calc-breakdown-value" id="calc-total">£0</span>
+                </div>
+                <div class="calc-breakdown-divider"></div>
+                <div class="calc-breakdown-item">
+                  <span class="calc-breakdown-label">Total Interest Paid</span>
+                  <span class="calc-breakdown-value" id="calc-interest"
+                    >£0</span
+                  >
+                </div>
+                <div class="calc-breakdown-divider"></div>
+                <div class="calc-breakdown-item">
+                  <span class="calc-breakdown-label">Capital Borrowed</span>
+                  <span class="calc-breakdown-value" id="calc-capital">£0</span>
+                </div>
+              </div>
+
+              <!-- DONUT CHART -->
+              <div class="calc-chart-wrap">
+                <svg class="calc-donut" viewBox="0 0 120 120" id="calc-donut">
+                  <circle
+                    class="calc-donut-bg"
+                    cx="60"
+                    cy="60"
+                    r="48"
+                    fill="none"
+                    stroke-width="16"
+                  />
+                  <circle
+                    class="calc-donut-capital"
+                    cx="60"
+                    cy="60"
+                    r="48"
+                    fill="none"
+                    stroke-width="16"
+                    stroke-dasharray="0 301.6"
+                    stroke-dashoffset="75.4"
+                    id="calc-donut-capital"
+                  />
+                  <circle
+                    class="calc-donut-interest"
+                    cx="60"
+                    cy="60"
+                    r="48"
+                    fill="none"
+                    stroke-width="16"
+                    stroke-dasharray="0 301.6"
+                    stroke-dashoffset="75.4"
+                    id="calc-donut-interest"
+                  />
+                </svg>
+                <div class="calc-chart-legend">
+                  <span class="calc-legend-item"
+                    ><i
+                      class="calc-legend-dot"
+                      style="background: var(--white)"
+                    ></i
+                    >Capital</span
+                  >
+                  <span class="calc-legend-item"
+                    ><i
+                      class="calc-legend-dot"
+                      style="background: var(--gold)"
+                    ></i
+                    >Interest</span
+                  >
+                </div>
+              </div>
+
+              <div class="calc-disclaimer">
+                This calculator provides an estimate only. Your actual payments
+                may vary. Speak to an adviser for a personalised illustration.
+              </div>
+
+              <button
+                class="btn-primar speak"
+                style="width: 100%; justify-content: center; margin-top: 4px"
+                onclick="showPage('contact')"
+              >
+                Speak to an Adviser
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </button>
+            </div>
+            <!-- end results -->
+          </div>
+          <!-- end wrapper -->
+        </div>
+      </section>
+      <!-- END CALCULATOR SECTION -->
+
+      <!-- TESTIMONIALS -->
+      <section class="section testimonials-section">
+        <div class="section-inner">
+          <div class="section-label anim">Client Testimonials</div>
+          <h2 class="section-title anim" style="transition-delay: 0.1s">
+            What our clients say
+          </h2>
+          <p class="section-intro anim" style="transition-delay: 0.2s">
+            Trusted by homeowners, first-time buyers, and investors alike.
+          </p>
+
+          <div class="testimonials-grid">
+            <div class="testimonial-card anim">
+              <div class="stars">
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+              </div>
+              <blockquote>
+                "Onyx Mortgage Finance found us some excellent deals, saving us
+                over £200 a month without affecting our term. The advice was
+                clear, and the process was effortless. We couldn't recommend
+                them more highly."
+              </blockquote>
+              <div class="testimonial-author">
+                <div class="author-avatar">L</div>
+                <div class="author-info">
+                  <span>Lee</span>
+                  <span>Bristol</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card anim" style="transition-delay: 0.1s">
+              <div class="stars">
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+              </div>
+              <blockquote>
+                "A huge thank you for all the help, time and support over the
+                past year — from selling my old place to finding a mortgage well
+                within budget. The whole process was made so much easier. I'll
+                be back when my deal expires."
+              </blockquote>
+              <div class="testimonial-author">
+                <div class="author-avatar">K</div>
+                <div class="author-info">
+                  <span>Katie</span>
+                  <span>Yate</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card anim" style="transition-delay: 0.2s">
+              <div class="stars">
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+              </div>
+              <blockquote>
+                "We always felt supported and in safe hands, with every question
+                — no matter how small — answered promptly and clearly. We would
+                strongly recommend Onyx Mortgage Finance to anyone seeking a
+                broker they can trust."
+              </blockquote>
+              <div class="testimonial-author">
+                <div class="author-avatar">E</div>
+                <div class="author-info">
+                  <span>Emma & Dan</span>
+                  <span>Monmouth</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PARTNERS SLIDER -->
+      <section class="partners-section">
+        <div class="partners-header anim">
+          <div class="section-label" style="justify-content: center">
+            Our Partners
+          </div>
+          <h2 class="section-title" style="font-size: 36px">
+            Lenders we work with
+          </h2>
+          <p
+            style="
+              color: var(--text-light);
+              max-width: 480px;
+              margin: 0 auto;
+              font-size: 15px;
+            "
+          >
+            Access to a wide panel of leading UK mortgage lenders, ensuring you
+            get the best deal for your needs.
+          </p>
+        </div>
+        <div class="partners-track-wrap">
+          <div class="partners-track" id="partners-track">
+            <!-- will be populated by JS -->
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA STRIP -->
+      <section class="cta-strip">
+        <div class="cta-strip-inner">
+          <div>
+            <h2>Let's find the right mortgage<br />for your situation</h2>
+            <p>
+              Book a no-obligation consultation today and let us do the
+              searching and sourcing for you.
+            </p>
+          </div>
+          <button class="btn-gold" onclick="showPage('contact')">
+            Get in Touch
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+      </section>
+    </div>
+    <!-- end home -->
+
+    <!-- ==================== PAGE: FIRST TIME BUYERS ==================== -->
+    <div id="page-first-time" class="page">
+      <div class="page-hero">
+        <div class="page-hero-inner">
+          <div class="hero-label">Service — First Time Buyers</div>
+          <h1>Step onto the property ladder with confidence</h1>
+          <p>
+            Buying your first home should be exciting. We take the complexity
+            out of the mortgage process so you can focus on finding the place
+            you'll love to call home.
+          </p>
+        </div>
+        <svg
+          class="page-hero-wave"
+          viewBox="0 0 1440 60"
+          preserveAspectRatio="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 60L1440 60L1440 0C1200 40 900 60 720 50C540 40 240 0 0 20Z"
+            fill="white"
+          />
+        </svg>
+      </div>
+
+      <section class="section">
+        <div class="section-inner">
+          <div class="info-grid">
+            <div class="info-text anim">
+              <div class="section-label">What you need to know</div>
+              <h2>Understanding the home-buying process</h2>
+              <p>
+                Whether you're purchasing your very first property or moving
+                into a new home, the mortgage journey involves a number of
+                important stages. At Onyx Mortgage Finance, we assist with every
+                part of the credit assessment and mortgage application process —
+                giving you confidence at every step.
+              </p>
+              <p>
+                From understanding how much you can borrow, to securing a
+                mortgage in principle and seeing your application through to
+                completion, we're with you throughout.
+              </p>
+              <div class="trust-statement" style="margin-top: 28px">
+                <p>
+                  At Onyx Mortgage Finance, we build a lasting relationship by
+                  providing reliable services to our clients.
+                </p>
+              </div>
+              <button
+                class="btn-primary"
+                style="margin-top: 28px"
+                onclick="showPage('contact')"
+              >
+                Speak to an Adviser
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </button>
+            </div>
+            <div class="anim" style="transition-delay: 0.2s">
+              <div class="steps-grid">
+                <div class="step-card" data-step="1">
+                  <h3>
+                    <span
+                      style="
+                        font-family: 'Cormorant Garamond', serif;
+                        font-size: 26px;
+                        color: var(--gold);
+                        font-weight: 600;
+                        margin-right: 8px;
+                      "
+                      >01</span
+                    >
+                    Initial Consultation
+                  </h3>
+                  <p>
+                    We get to know your financial situation, goals and timeline
+                    to understand what's possible.
+                  </p>
+                </div>
+                <div class="step-card" data-step="2">
+                  <h3>
+                    <span
+                      style="
+                        font-family: 'Cormorant Garamond', serif;
+                        font-size: 26px;
+                        color: var(--gold);
+                        font-weight: 600;
+                        margin-right: 8px;
+                      "
+                      >02</span
+                    >
+                    Credit Assessment
+                  </h3>
+                  <p>
+                    We review your income, outgoings and credit profile to
+                    establish a realistic borrowing range.
+                  </p>
+                </div>
+                <div class="step-card" data-step="3">
+                  <h3>
+                    <span
+                      style="
+                        font-family: 'Cormorant Garamond', serif;
+                        font-size: 26px;
+                        color: var(--gold);
+                        font-weight: 600;
+                        margin-right: 8px;
+                      "
+                      >03</span
+                    >
+                    Mortgage in Principle
+                  </h3>
+                  <p>
+                    We secure your Agreement in Principle — giving you buying
+                    power when making an offer.
+                  </p>
+                </div>
+                <div class="step-card" data-step="4">
+                  <h3>
+                    <span
+                      style="
+                        font-family: 'Cormorant Garamond', serif;
+                        font-size: 26px;
+                        color: var(--gold);
+                        font-weight: 600;
+                        margin-right: 8px;
+                      "
+                      >04</span
+                    >
+                    Application & Completion
+                  </h3>
+                  <p>
+                    Once your offer is accepted, we manage the full mortgage
+                    application and keep you informed until the keys are in your
+                    hands.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-strip">
+        <div class="cta-strip-inner">
+          <div>
+            <h2>Ready to start your<br />property journey?</h2>
+            <p>
+              Book a no-obligation consultation today. We'll guide you every
+              step of the way.
+            </p>
+          </div>
+          <button class="btn-gold" onclick="showPage('contact')">
+            Book a Consultation
+          </button>
+        </div>
+      </section>
+    </div>
+
+    <!-- ==================== PAGE: EXISTING HOMEOWNERS ==================== -->
+    <div id="page-homeowners" class="page">
+      <div class="page-hero">
+        <div class="page-hero-inner">
+          <div class="hero-label">Service — Existing Homeowners</div>
+          <h1>Remortgaging and home moving, made straightforward</h1>
+          <p>
+            Understanding your options as an existing homeowner can unlock real
+            financial benefits. We search the whole market to find the most
+            competitive deal available for your needs.
+          </p>
+        </div>
+        <svg
+          class="page-hero-wave"
+          viewBox="0 0 1440 60"
+          preserveAspectRatio="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 60L1440 60L1440 0C1200 40 900 60 720 50C540 40 240 0 0 20Z"
+            fill="white"
+          />
+        </svg>
+      </div>
+
+      <section class="section">
+        <div class="section-inner">
+          <div class="info-grid">
+            <div class="info-text anim">
+              <div class="section-label">How We Help</div>
+              <h2>Making your existing mortgage work harder for you</h2>
+              <p>
+                As a whole-of-market broker, Onyx Mortgage Finance has access to
+                a substantial number of lenders — far beyond what you'd find on
+                a high street bank's website. That means we can find genuinely
+                competitive rates matched to your specific circumstances,
+                whether you're looking to reduce your monthly payments, release
+                equity, or fund a home move.
+              </p>
+              <p>
+                We also proactively contact clients as their fixed-rate or
+                tracker deal approaches expiry, ensuring you never inadvertently
+                move onto an uncompetitive standard variable rate.
+              </p>
+              <div class="trust-statement" style="margin-top: 28px">
+                <p>
+                  At Onyx Mortgage Finance, we build a lasting relationship by
+                  providing reliable services to our clients.
+                </p>
+              </div>
+              <button
+                class="btn-primary"
+                style="margin-top: 28px"
+                onclick="showPage('contact')"
+              >
+                Get in Touch
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </button>
+            </div>
+            <div class="anim" style="transition-delay: 0.2s">
+              <div class="section-label" style="margin-bottom: 20px">
+                Options Available to You
+              </div>
+              <div class="cards-grid" style="margin-top: 0">
+                <div class="feature-card">
+                  <h3>Remortgaging to a Better Rate</h3>
+                  <p>
+                    If your current deal is ending, or you're on a standard
+                    variable rate, switching could significantly reduce your
+                    monthly outgoings.
+                  </p>
+                </div>
+
+                <div class="feature-card">
+                  <h3>Home Moving Mortgage</h3>
+                  <p>
+                    Whether you're upsizing, downsizing or relocating, we can
+                    identify the right mortgage for your new property.
+                  </p>
+                </div>
+                <div class="feature-card">
+                  <h3>Further Advance</h3>
+                  <p>
+                    Borrow additional funds from your existing lender to fund
+                    significant home improvements or other needs.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-strip">
+        <div class="cta-strip-inner">
+          <div>
+            <h2>Is your current deal<br />coming to an end?</h2>
+            <p>
+              Don't slip onto a standard variable rate. We'll find you a better
+              deal before it happens.
+            </p>
+          </div>
+          <button class="btn-gold" onclick="showPage('contact')">
+            Review My Mortgage
+          </button>
+        </div>
+      </section>
+    </div>
+
+    <!-- ==================== PAGE: PROPERTY INVESTORS ==================== -->
+    <div id="page-investors" class="page">
+      <div class="page-hero">
+        <div class="page-hero-inner">
+          <div class="hero-label">Service — Property Investors</div>
+          <h1>Buy to Let and portfolio finance</h1>
+          <p>
+            From your first investment property to a complex portfolio, Onyx
+            Mortgage Finance takes the complication out of investment lending
+            and puts the right deal in your hands.
+          </p>
+        </div>
+        <svg
+          class="page-hero-wave"
+          viewBox="0 0 1440 60"
+          preserveAspectRatio="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 60L1440 60L1440 0C1200 40 900 60 720 50C540 40 240 0 0 20Z"
+            fill="white"
+          />
+        </svg>
+      </div>
+
+      <section class="section">
+        <div class="section-inner">
+          <div class="info-grid">
+            <div class="info-text anim">
+              <div class="section-label">Investment Lending</div>
+              <h2>Expert support for property investors at every stage</h2>
+              <p>
+                Whether you need help acquiring a single buy-to-let property, or
+                restructuring an existing portfolio, Onyx Mortgage Finance
+                manages all your mortgage requirements with a thorough
+                understanding of the investment lending market.
+              </p>
+              <p>
+                We work closely with both first-time landlords and experienced
+                portfolio investors, tailoring our advice to your circumstances
+                and longer-term property goals. You'll be surprised by how much
+                simpler the process becomes when you have the right adviser in
+                your corner.
+              </p>
+              <div class="trust-statement" style="margin-top: 28px">
+                <p>
+                  At Onyx Mortgage Finance, we build a lasting relationship by
+                  providing reliable services to our clients.
+                </p>
+              </div>
+              <button
+                class="btn-primary"
+                style="margin-top: 28px"
+                onclick="showPage('contact')"
+              >
+                Discuss Your Portfolio
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </button>
+            </div>
+            <div class="anim" style="transition-delay: 0.2s">
+              <div class="section-label" style="margin-bottom: 20px">
+                Investment Mortgage Services
+              </div>
+              <div class="cards-grid" style="margin-top: 0">
+                <div class="feature-card">
+                  <h3>Buy to Let Mortgages</h3>
+                  <p>
+                    Residential rental property finance for individual landlords
+                    and limited company applicants.
+                  </p>
+                </div>
+                <div class="feature-card">
+                  <h3>Portfolio Landlord Finance</h3>
+                  <p>
+                    Specialist advice for landlords with four or more mortgaged
+                    properties, including complex cases.
+                  </p>
+                </div>
+                <div class="feature-card">
+                  <h3>HMO Mortgages</h3>
+                  <p>
+                    Finance for houses in multiple occupation and multi-unit
+                    freehold blocks with specialist lenders.
+                  </p>
+                </div>
+                <div class="feature-card">
+                  <h3>Multi-Unit Mortgages</h3>
+                  <p>
+                    Bespoke solutions for multi-unit freehold blocks and complex
+                    investment property structures.
+                  </p>
+                </div>
+              </div>
+              <div class="disclaimer">
+                Commercial lending and most buy-to-let arrangements are not
+                regulated by the FCA.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-strip">
+        <div class="cta-strip-inner">
+          <div>
+            <h2>Building or expanding<br />your portfolio?</h2>
+            <p>
+              Let us handle the mortgage side so you can focus on growing your
+              investment.
+            </p>
+          </div>
+          <button class="btn-gold" onclick="showPage('contact')">
+            Discuss Your Portfolio
+          </button>
+        </div>
+      </section>
+    </div>
+
+    <!-- ==================== PAGE: PROTECTION ==================== -->
+    <div id="page-protection" class="page">
+      <div class="page-hero">
+        <div class="page-hero-inner">
+          <div class="hero-label">Service — Protection Assessment</div>
+          <h1>Protecting you, your loved ones, and your home</h1>
+          <p>
+            A mortgage is a significant commitment. Our protection assessment
+            ensures that if the unexpected happens, you and your family are
+            fully covered.
+          </p>
+        </div>
+        <svg
+          class="page-hero-wave"
+          viewBox="0 0 1440 60"
+          preserveAspectRatio="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 60L1440 60L1440 0C1200 40 900 60 720 50C540 40 240 0 0 20Z"
+            fill="white"
+          />
+        </svg>
+      </div>
+
+      <section class="section">
+        <div class="section-inner">
+          <div class="section-label anim">Why Protection Matters</div>
+          <h2 class="section-title anim" style="transition-delay: 0.1s">
+            A complete care package for life's uncertainties
+          </h2>
+          <p class="section-intro anim" style="transition-delay: 0.2s">
+            At Onyx Mortgage Finance, we believe that financial planning is
+            incomplete without adequate protection in place. We carry out a
+            thorough protection assessment for every client, identifying the
+            policies best suited to your situation and budget.
+          </p>
+
+          <div class="protection-grid" style="margin-top: 48px">
+            <div class="protection-card anim">
+              <div class="protection-icon">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#A68C54"
+                  stroke-width="1.8"
+                >
+                  <path
+                    d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"
+                  />
+                </svg>
+              </div>
+              <h3>Life Insurance</h3>
+              <p>
+                Ensures your outstanding mortgage and other financial
+                commitments are covered should the worst happen, providing
+                security for those you leave behind.
+              </p>
+            </div>
+            <div class="protection-card anim" style="transition-delay: 0.1s">
+              <div class="protection-icon">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#A68C54"
+                  stroke-width="1.8"
+                >
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                </svg>
+              </div>
+              <h3>Critical Illness Cover</h3>
+              <p>
+                Pays a lump sum on diagnosis of a specified serious illness,
+                giving you the financial breathing room to focus on your
+                recovery without mortgage stress.
+              </p>
+            </div>
+            <div class="protection-card anim" style="transition-delay: 0.2s">
+              <div class="protection-icon">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#A68C54"
+                  stroke-width="1.8"
+                >
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+                  <path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16" />
+                </svg>
+              </div>
+              <h3>Income Protection Cover</h3>
+              <p>
+                A long-term safety net paying a tax-free regular income (usually
+                50–65% of gross salary) if you cannot work due to illness or
+                injury. Covers essential expenses until you return to work,
+                retire, or the policy ends.
+              </p>
+            </div>
+            <div class="protection-card anim">
+              <div class="protection-icon">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#A68C54"
+                  stroke-width="1.8"
+                >
+                  <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                  <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" />
+                </svg>
+              </div>
+              <h3>Family Income Benefit</h3>
+              <p>
+                Provides a regular monthly income to your family in the event of
+                your death or diagnosis of a terminal illness, replacing the
+                income your family depends on.
+              </p>
+            </div>
+            <div class="protection-card anim" style="transition-delay: 0.1s">
+              <div class="protection-icon">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#A68C54"
+                  stroke-width="1.8"
+                >
+                  <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+                  <polyline points="9 22 9 12 15 12 15 22" />
+                </svg>
+              </div>
+              <h3>Buildings & Contents Insurance</h3>
+              <p>
+                Protects the physical structure of your home and your
+                possessions within it — often a requirement of your mortgage
+                lender and essential to responsible homeownership.
+              </p>
+            </div>
+            <div
+              class="protection-card anim"
+              style="transition-delay: 0.2s"
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: var(--gold-pale);
+                border-color: var(--gold);
+              "
+            >
+              <div style="text-align: center; padding: 20px">
+                <div class="protection-icon" style="margin: 0 auto 16px">
+                  <svg
+                    width="22"
+                    height="22"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#A68C54"
+                    stroke-width="1.8"
+                  >
+                    <path
+                      d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 12a19.79 19.79 0 01-3.07-8.63A2 2 0 012 1.18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.43a16 16 0 006.59 6.59l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"
+                    />
+                  </svg>
+                </div>
+                <p
+                  style="
+                    font-family: 'Cormorant Garamond', serif;
+                    font-size: 16px;
+                    font-style: italic;
+                    color: var(--dark);
+                    margin: 0;
+                  "
+                >
+                  Not sure what cover you need? Book a free protection review.
+                </p>
+                <button
+                  class="btn-primary"
+                  style="margin-top: 16px"
+                  onclick="showPage('contact')"
+                >
+                  Book a Review
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="trust-statement" style="margin-top: 40px">
+            <p>
+              At Onyx Mortgage Finance, we build a lasting relationship by
+              providing reliable services to our clients.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-strip">
+        <div class="cta-strip-inner">
+          <div>
+            <h2>Is your family fully<br />protected?</h2>
+            <p>
+              Request a free protection assessment today. Let us ensure your
+              financial safety net is complete.
+            </p>
+          </div>
+          <div style="display: flex; gap: 14px; flex-wrap: wrap">
+            <button class="btn-gold" onclick="showPage('contact')">
+              Request a Protection Assessment
+            </button>
+            <button
+              class="btn-secondary"
+              style="
+                background: transparent;
+                color: rgba(255, 255, 255, 0.7);
+                border-color: rgba(255, 255, 255, 0.3);
+              "
+              onclick="showPage('home')"
+            >
+              Back to Home
+            </button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ==================== PAGE: CONTACT ==================== -->
+    <div id="page-contact" class="page">
+      <div class="page-hero">
+        <div class="page-hero-inner">
+          <div class="hero-label">Contact</div>
+          <h1>Let's start the conversation</h1>
+          <p>
+            Reach out to book a no-obligation consultation. We'll find the right
+            time to talk through your mortgage needs and explain exactly what we
+            can do for you.
+          </p>
+        </div>
+        <svg
+          class="page-hero-wave"
+          viewBox="0 0 1440 60"
+          preserveAspectRatio="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 60L1440 60L1440 0C1200 40 900 60 720 50C540 40 240 0 0 20Z"
+            fill="white"
+          />
+        </svg>
+      </div>
+
+      <section class="section">
+        <div class="section-inner">
+          <div class="contact-grid">
+            <div class="contact-form anim">
+              <h3>Get in touch with Onyx Mortgage Finance</h3>
+              <div class="form-row">
+                <div class="form-group">
+                  <label>First Name</label>
+                  <input type="text" placeholder="e.g. James" />
+                </div>
+                <div class="form-group">
+                  <label>Last Name</label>
+                  <input type="text" placeholder="e.g. Smith" />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label>Email Address</label>
+                  <input type="email" placeholder="your@email.com" />
+                </div>
+                <div class="form-group">
+                  <label>Phone Number</label>
+                  <input type="tel" placeholder="+44 7xxx xxxxxx" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Enquiry Type</label>
+                <select>
+                  <option value="">Please select…</option>
+                  <option>First Time Buyer</option>
+                  <option>Remortgage</option>
+                  <option>Buy to Let</option>
+                  <option>Property Investor</option>
+                  <option>Protection Assessment</option>
+                  <option>General Enquiry</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Your Message</label>
+                <textarea
+                  placeholder="Tell us about your situation and what you're looking for…"
+                ></textarea>
+              </div>
+              <button
+                class="btn-primary"
+                style="width: 100%; justify-content: center"
+              >
+                Send Enquiry
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <line x1="22" y1="2" x2="11" y2="13" />
+                  <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                </svg>
+              </button>
+              <p class="form-note">
+                By submitting this form, you agree to be contacted by Onyx
+                Mortgage Finance regarding your enquiry. Your data will be
+                handled in accordance with our
+                <a
+                  onclick="showPage('privacy')"
+                  style="color: var(--gold); cursor: pointer"
+                  >Privacy Notice</a
+                >.
+              </p>
+            </div>
+
+            <div class="contact-info anim" style="transition-delay: 0.2s">
+              <div>
+                <div class="section-label" style="margin-bottom: 12px">
+                  Contact Details
+                </div>
+                <h3>How to reach us</h3>
+                <p>
+                  We're here to help. Reach out by email or phone, or simply
+                  fill in the form and we'll be in touch.
+                </p>
+              </div>
+
+              <div class="contact-detail">
+                <div class="contact-detail-icon">
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#A68C54"
+                    stroke-width="1.8"
+                  >
+                    <path
+                      d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                    />
+                    <polyline points="22,6 12,13 2,6" />
+                  </svg>
+                </div>
+                <div class="contact-detail-text">
+                  <strong>Email</strong>
+                  <span>info@onyxmortgagefinance.co.uk</span>
+                </div>
+              </div>
+
+              <div class="contact-detail">
+                <div class="contact-detail-icon">
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#A68C54"
+                    stroke-width="1.8"
+                  >
+                    <circle cx="12" cy="12" r="10" />
+                    <polyline points="12 6 12 12 16 14" />
+                  </svg>
+                </div>
+                <div class="contact-detail-text">
+                  <strong>Opening Hours</strong>
+                  <span
+                    >Mon–Fri: 9:00am – 6:00pm<br />Saturday: By appointment<br />Sunday:
+                    Closed</span
+                  >
+                </div>
+              </div>
+
+              <div class="contact-detail">
+                <div class="contact-detail-icon">
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#A68C54"
+                    stroke-width="1.8"
+                  >
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                    <circle cx="12" cy="10" r="3" />
+                  </svg>
+                </div>
+                <div class="contact-detail-text">
+                  <strong>Registered Office</strong>
+                  <span>3 Tennyson Close, Welling, Kent, DA16 3NX</span>
+                </div>
+              </div>
+
+              <div class="reg-box">
+                <strong>Regulatory Information</strong>
+                Onyx Mortgage Finance Limited, trading as Onyx Mortgage Finance,
+                is an appointed representative of HL Partnership Limited which
+                is authorised and regulated by the Financial Conduct
+                Authority.<br /><br />
+                Registered in England & Wales: Company No. 17033533
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ==================== PAGE: PRIVACY ==================== -->
+    <div id="page-privacy" class="page">
+      <div class="page-hero">
+        <div class="page-hero-inner">
+          <div class="hero-label">Legal</div>
+          <h1>Data Protection Statement</h1>
+          <p>How we will handle your personal data and protect your privacy.</p>
+          <p>
+            A guide to how we meet the requirements of the Data Protection Act.
+          </p>
+          <p>
+            Making sure personal data is secure and properly dealt with is of
+            paramount importance in our dealings with you. It is therefore
+            important you understand what information we will take, why we need
+            it, and how we will process your details.
+          </p>
+        </div>
+        <svg
+          class="page-hero-wave"
+          viewBox="0 0 1440 60"
+          preserveAspectRatio="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 60L1440 60L1440 0C1200 40 900 60 720 50C540 40 240 0 0 20Z"
+            fill="white"
+          />
+        </svg>
+      </div>
+
+      <section class="section">
+        <div class="section-inner">
+          <div class="privacy-content">
+            <div class="privacy-section">
+              <h2>Who will process my data?</h2>
+              <p>
+                <strong>Onyx Mortgage Finance</strong> is an appointed
+                representative of HL Partnership Limited which is authorised and
+                regulated by the Financial Conduct Authority. As such, both Onyx
+                Mortgage Finance and HL Partnership Limited will process your
+                data in order to provide our services.
+              </p>
+            </div>
+            <div class="privacy-section">
+              <h2>What data will you ask me for?</h2>
+              <p>
+                In order to fully understand your financial needs and be able to
+                give good advice, we need to obtain information about you, your
+                family, your personal circumstances, and your preferences. Some
+                of the information will be private and may be sensitive, such as
+                details of your income and expenditure, health, debts and credit
+                commitments, legal proceedings and adverse credit. Much of the
+                information you provide will need to be passed on to the
+                companies whose products you apply for.
+              </p>
+            </div>
+            <div class="privacy-section">
+              <h2>Do I have to provide my personal data?</h2>
+              <p>
+                In order for us to be able to give you suitable advice, we need
+                you to provide all the information we ask for as openly and
+                honestly as possible. If you prefer not to disclose some
+                information, please tell us that you prefer not to disclose it
+                and we will assess whether this will alter or impede the work we
+                are doing for you.
+              </p>
+            </div>
+            <div class="privacy-section">
+              <h2>How will you use my data?</h2>
+              <ol>
+                <li>
+                  <p>
+                    The primary reason we will use your data is to allow us to
+                    do the job you’ve asked us to do. Specifically, we will use
+                    your data to:
+                  </p>
+                  <ul>
+                    <li>
+                      Assess and provide advice to meet your needs and
+                      circumstances;
+                    </li>
+                    <li>
+                      Introduce you to a range of product and service providers
+                      in order to meet your requirements;
+                    </li>
+                    <li>
+                      Administer cases and assist processing of applications;
+                    </li>
+                    <li>
+                      Tell you about any changes to products and service we have
+                      arranged for you;
+                    </li>
+                    <li>
+                      Inform you about products and services we think may be
+                      suitable for you (unless you ask us not to send you this
+                      information).
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <p>
+                    We may also process your information in order to meet our
+                    legal and regulatory requirements. These may include:
+                  </p>
+                  <ul>
+                    <li>
+                      Complying with the regulations set out by the Financial
+                      Conduct Authority and other regulators as required;
+                    </li>
+                    <li>
+                      Preventing financial crimes such as money laundering and
+                      fraud by passing your details to other relevant bodies
+                      such as the police and National Crime Agency where
+                      required.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <p>
+                    We may also process your personal data for our own
+                    legitimate interests. Typically, these would be limited to:
+                  </p>
+                  <ul>
+                    <li>
+                      Analysing our business for trends and research how we can
+                      improve our services to customers;
+                    </li>
+                    <li>
+                      Reviewing the work we have carried out for you to ensure
+                      we have met the regulations and quality standards;
+                    </li>
+                    <li>
+                      Ensuring we are able to exercise or defend legal
+                      challenges in the future.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <p>
+                    HL Partnership Limited will use your data to monitor and
+                    assess our work to ensure we have provided a high standard
+                    of service and met our legal and regulatory commitments.
+                  </p>
+                </li>
+              </ol>
+            </div>
+            <div class="privacy-section">
+              <h2>How long will we store your data?</h2>
+              <p>
+                We will only keep your personal information as long as
+                necessary. How long that is depends on the type of data and the
+                nature of the work we have carried out. In most cases, your
+                personal data will be stored for an indefinite period as we need
+                to keep evidence that we have fulfilled our legal and regulatory
+                requirements.
+              </p>
+            </div>
+            <div class="privacy-section">
+              <h2>Can I see a copy of my personal data?</h2>
+              <p>
+                Yes. Please write to our Data Controller (details below) and we
+                will provide a copy of any personal data we hold about you
+                within one calendar month of receiving your request. Please note
+                that we may need to verify your identity before providing the
+                information.
+              </p>
+            </div>
+            <div class="privacy-section">
+              <h2>What if my data is incorrect or incomplete?</h2>
+              <p>
+                You have the right to have your data corrected or completed by
+                contacting our Data Controller in writing (details below).
+                Please be aware that we need to maintain records of information
+                as it was at the time of the advice or the transaction taking
+                place.
+              </p>
+            </div>
+            <div class="privacy-section">
+              <h2>Can I have my data erased?</h2>
+              <p>
+                If we have provided you with advice or processed a transaction
+                on your behalf, we will not normally be able to erase your
+                personal data. This is because we are obliged to maintain
+                records of our advice and transactions to meet our regulatory
+                requirements and in case we need to exercise or defend legal
+                claims in future.
+              </p>
+            </div>
+            <div class="privacy-section">
+              <h2>Who is the Data Controller?</h2>
+              <table class="contact-table">
+                <thead>
+                  <tr>
+                    <th>Detail</th>
+                    <th>Onyx Mortgage Finance</th>
+                    <th>HL Partnership Limited</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Address</td>
+                    <td>3 Tennyson Close, Welling, Kent, DA16 3NX</td>
+                    <td>6 Merus Court, Leicester, LE19 1RJ</td>
+                  </tr>
+                  <tr>
+                    <td>Telephone</td>
+                    <td>+44 7503 594 943</td>
+                    <td>03300 552651</td>
+                  </tr>
+                  <tr>
+                    <td>Email</td>
+                    <td>info@onyxmortgagefinance.co.uk</td>
+                    <td>compliance@hlpartnership.co.uk</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="privacy-section">
+              <h2>How can I get more information?</h2>
+              <p>
+                If you would like further details on how we use your personal
+                information or if you have any data protection queries, please
+                write to: The Data Protection Officer, HL Partnership Limited, 6
+                Merus Court, Meridian Business Park, Leicester, LE19 1RJ Email:
+                compliance@hlpartnership.co.uk
+              </p>
+
+              <p>
+                If you'd like to make a complaint about how we have handled your
+                personal data… …please write in the first instance to The Data
+                Protection Officer at the above address. If you are not
+                satisfied with the Data Protection Officer's response, you can
+                make a complaint to: Information Commissioner's Office, Wycliffe
+                House, Water Lane, Wilmslow, Cheshire, SK9 5AF Telephone: 0303
+                123 1113 (local rate) or 01625 545 745 (national rate) Email
+                through their website at: https://ico.org.uk/concerns/
+              </p>
+            </div>
+            <div class="security-notice">
+              <h3>Important Notes on Protecting your own Data</h3>
+              <p>
+                Please be aware of cybercrime and protecting your own
+                information online, particularly financial information. Do not
+                send unsecure personal information over the internet. We
+                recommend you use encryption software or provide any information
+                to us using the online tools we provide.
+              </p>
+              <p>Do not respond to emails asking you to pay money. Never make a payment purely in response to an email. Always call the company to validate any payment requests and check the phone number independently from the email (i.e. via a secure web site). If you receive a phone call asking for payment ensure you are satisfied the call is genuine, or else call the company back to check. Neither <Your firm name> nor HL Partnership will take responsibility if you transfer money to a fraudster in error. </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer id="main-footer">
+      <div class="footer-inner">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <div class="footer-logo" onclick="showPage('home')">
+              <div class="footer-logo-mark">
+                <img src="./logos/logo.png" alt="site logo" />
+              </div>
+            </div>
+            <p>
+              Welcome to Onyx Mortgage Finance Limited, one of the leading
+              mortgage brokers in the United Kingdom. We take away the hassle on
+              your mortgage journey and make the process of house-buying as
+              simple and stress-free as possible.
+            </p>
+            <p
+              style="
+                margin-top: 12px;
+                font-style: italic;
+                color: white;
+                font-size: 14px;
+              "
+            >
+              At Onyx Mortgage Finance, we build a lasting relationship by
+              providing reliable services to our clients
+            </p>
+          </div>
+          <div class="footer-col">
+            <h4>Services</h4>
+            <a onclick="showPage('first-time')">First Time Buyers</a>
+            <a onclick="showPage('homeowners')">Existing Homeowners</a>
+            <a onclick="showPage('investors')">Property Investors</a>
+            <a onclick="showPage('protection')">Protection</a>
+          </div>
+          <div class="footer-col">
+            <h4>Company</h4>
+            <a onclick="showPage('home')">Home</a>
+            <a onclick="showPage('contact')">Get in Touch</a>
+            <a onclick="showPage('privacy')">Privacy Notice</a>
+          </div>
+          <div class="footer-col">
+            <h4>Contact</h4>
+            <a href="mailto:info@onyxmortgagefinance.co.uk"
+              >info@onyxmortgagefinance.co.uk</a
+            >
+            <a>Mon–Fri: 9am – 6pm</a>
+            <a>Saturday: By appointment</a>
+            <a>Sunday: Closed</a>
+          </div>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="footer-bottom">
+          <div class="footer-legal">
+            Onyx Mortgage Finance Limited, trading as Onyx Mortgage Finance, is
+            an appointed representative of HL Partnership Limited which is
+            authorised and regulated by the Financial Conduct Authority.
+            Registered in England and Wales: Company No. 17033533. Registered
+            Office: 3 Tennyson Close, Welling, Kent, DA16 3NX.<br /><br />
+            Commercial lending and most buy-to-let arrangements are not
+            regulated by the FCA.
+            <strong style="color: rgba(255, 255, 255, 0.5)"
+              >Your home may be repossessed if you do not keep up repayments on
+              your mortgage or any other loan secured against it.</strong
+            >
+          </div>
+          <div class="footer-copyright">
+            <div style="color: rgba(255, 255, 255, 0.6); margin-bottom: 8px">
+              © 2026 Onyx Mortgage Finance
+            </div>
+            <div>All rights reserved.</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // PARTNERS DATA
+      const partners = [
+        { name: 'NatWest', logo: 'natwest.png' },
+        { name: 'Nationwide', logo: 'nationwide.png' },
+        { name: 'Santander UK', logo: 'santander.png' },
+        { name: 'Barclays', logo: 'barclays.png' },
+        { name: 'HSBC UK', logo: 'hsbc.png' },
+        { name: 'Halifax', logo: 'halifax.svg' },
+        { name: 'TSB Bank', logo: 'tsb.png' },
+        { name: 'Metro Bank', logo: 'metro-bank.png' },
+        { name: 'The Co-operative Bank', logo: 'co-operative-bank.png' },
+        { name: 'Clydesdale Bank', logo: 'clydesdale.png' },
+        { name: 'Virgin Money', logo: 'virgin-money.png' },
+        { name: 'Coventry Building Society', logo: 'coventry-bs.png' },
+        { name: 'Skipton Building Society', logo: 'skipton-bs.png' },
+        { name: 'Leeds Building Society', logo: 'leeds-bs.png' },
+        { name: 'Principality Building Society', logo: 'principality-bs.png' },
+        { name: 'Aldermore', logo: 'aldermore.png' },
+        { name: 'Kent Reliance', logo: 'kent-reliance.png' },
+        { name: 'Accord Mortgages', logo: 'accord-mortgages.png' },
+        { name: 'Foundation Home Loans', logo: 'foundation-home-loans.png' },
+        { name: 'Kensington Mortgages', logo: 'kensington-mortgages.png' },
+      ];
+
+      function buildPartners() {
+        const track = document.getElementById('partners-track');
+        const all = [...partners, ...partners]; // duplicate for seamless loop
+        track.innerHTML = all
+          .map(
+            (p) => `
+    <div class="partner-item">
+      <img 
+        src="logos/${p.logo}" 
+        alt="${p.name}" 
+        title="${p.name}"
+        onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
+      />
+      <span class="partner-name" style="display:none">${p.name}</span>
+    </div>
+  `,
+          )
+          .join('');
+      }
+
+      // PAGE NAVIGATION
+      function showPage(id) {
+        document
+          .querySelectorAll('.page')
+          .forEach((p) => p.classList.remove('active'));
+        document.getElementById('page-' + id).classList.add('active');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        // re-observe animations
+        setTimeout(initAnimations, 100);
+      }
+
+      // NAV SCROLL
+      window.addEventListener('scroll', () => {
+        const nav = document.getElementById('main-nav');
+        if (window.scrollY > 10) nav.classList.add('scrolled');
+        else nav.classList.remove('scrolled');
+      });
+
+      // MOBILE MENU
+      function toggleMenu() {
+        document.getElementById('mobile-menu').classList.toggle('open');
+      }
+
+      // SCROLL ANIMATIONS
+      function initAnimations() {
+        const elements = document.querySelectorAll('.page.active .anim');
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.1 },
+        );
+
+        elements.forEach((el) => {
+          if (!el.classList.contains('visible')) {
+            observer.observe(el);
+          }
+        });
+      }
+
+      // calculator
+      (function () {
+        let repaymentType = 'repayment';
+
+        function fmt(n) {
+          return (
+            '£' +
+            n.toLocaleString('en-GB', {
+              minimumFractionDigits: 2,
+              maximumFractionDigits: 2,
+            })
+          );
+        }
+
+        function calculate() {
+          const P =
+            parseFloat(document.getElementById('calc-amount').value) || 0;
+          const annualRate =
+            parseFloat(document.getElementById('calc-rate').value) || 0;
+          const years =
+            parseFloat(document.getElementById('calc-term').value) || 1;
+          const n = years * 12;
+          const r = annualRate / 100 / 12;
+
+          let monthly, totalPaid, totalInterest;
+
+          if (repaymentType === 'interest') {
+            monthly = P * r;
+            totalPaid = monthly * n + P;
+            totalInterest = monthly * n;
+          } else {
+            if (r === 0) {
+              monthly = P / n;
+            } else {
+              monthly =
+                (P * (r * Math.pow(1 + r, n))) / (Math.pow(1 + r, n) - 1);
+            }
+            totalPaid = monthly * n;
+            totalInterest = totalPaid - P;
+          }
+
+          document.getElementById('calc-monthly').textContent = fmt(monthly);
+          document.getElementById('calc-total').textContent = fmt(totalPaid);
+          document.getElementById('calc-interest').textContent =
+            fmt(totalInterest);
+          document.getElementById('calc-capital').textContent = fmt(P);
+
+          // Donut chart
+          const circumference = 2 * Math.PI * 48; // 301.6
+          const capitalFrac = totalPaid > 0 ? P / totalPaid : 0;
+          const interestFrac = totalPaid > 0 ? totalInterest / totalPaid : 0;
+          const capitalLen = capitalFrac * circumference;
+          const interestLen = interestFrac * circumference;
+
+          const capEl = document.getElementById('calc-donut-capital');
+          const intEl = document.getElementById('calc-donut-interest');
+
+          capEl.setAttribute(
+            'stroke-dasharray',
+            `${capitalLen} ${circumference - capitalLen}`,
+          );
+          capEl.setAttribute('stroke-dashoffset', circumference * 0.25); // start at top
+
+          intEl.setAttribute(
+            'stroke-dasharray',
+            `${interestLen} ${circumference - interestLen}`,
+          );
+          intEl.setAttribute(
+            'stroke-dashoffset',
+            circumference * 0.25 - capitalLen,
+          );
+        }
+
+        function syncRange(inputId, rangeId) {
+          const input = document.getElementById(inputId);
+          const range = document.getElementById(rangeId);
+          input.addEventListener('input', () => {
+            range.value = input.value;
+            calculate();
+          });
+          range.addEventListener('input', () => {
+            input.value = range.value;
+            calculate();
+          });
+        }
+
+        window.setRepaymentType = function (type) {
+          repaymentType = type;
+          document
+            .getElementById('toggle-repayment')
+            .classList.toggle('active', type === 'repayment');
+          document
+            .getElementById('toggle-interest')
+            .classList.toggle('active', type === 'interest');
+          document.getElementById('calc-repayment-note').textContent =
+            type === 'interest'
+              ? 'Based on an interest only mortgage'
+              : 'Based on a repayment mortgage';
+          calculate();
+        };
+
+        syncRange('calc-amount', 'calc-amount-range');
+        syncRange('calc-rate', 'calc-rate-range');
+        syncRange('calc-term', 'calc-term-range');
+
+        // Run on load
+        if (document.getElementById('calc-amount')) calculate();
+      })();
+
+      // INIT
+      buildPartners();
+      initAnimations();
+    </script>
+  </body>
+</html>
