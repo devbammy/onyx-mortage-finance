@@ -23,7 +23,8 @@ html {
 }
 
 body {
-  font-family: 'DM Sans', sans-serif;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
   color: var(--text);
   background: var(--white);
   font-size: 16px;
@@ -55,7 +56,7 @@ nav.scrolled {
 }
 
 .nav-inner {
-  max-width: 1200px;
+  max-width: 90%;
   margin: 0 auto;
   padding: 0 32px;
   display: flex;
@@ -73,7 +74,7 @@ nav.scrolled {
 }
 
 .nav-logo-mark {
-  width: 250px;
+  width: 400px;
   /* height: 150px; */
   border-radius: 4px;
   display: flex;
@@ -101,7 +102,7 @@ nav.scrolled {
 }
 
 .nav-logo-text span:last-child {
-  font-size: 10px;
+  font-size: 16px;
   font-weight: 500;
   color: var(--gold);
   letter-spacing: 0.12em;
@@ -116,7 +117,7 @@ nav.scrolled {
 }
 
 .nav-links a {
-  font-size: 13.5px;
+  font-size: 22px !important;
   font-weight: 500;
   color: var(--text-light);
   text-decoration: none;
@@ -184,7 +185,7 @@ nav.scrolled {
   color: var(--text);
   text-decoration: none;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 16px;
   cursor: pointer;
 }
 .mobile-menu a:last-child {
@@ -230,7 +231,7 @@ nav.scrolled {
 }
 
 .hero-inner {
-  max-width: 1200px;
+  max-width: 90%;
   margin: 0 auto;
   padding: 80px 32px;
   position: relative;
@@ -294,7 +295,7 @@ nav.scrolled {
   color: white;
   border: none;
   padding: 14px 28px;
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.02em;
@@ -319,8 +320,8 @@ nav.scrolled {
   color: var(--dark);
   border: 1.5px solid var(--border);
   padding: 13px 28px;
-  font-family: 'DM Sans', sans-serif;
-  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
   font-weight: 500;
   cursor: pointer;
   border-radius: 4px;
@@ -338,7 +339,7 @@ nav.scrolled {
 }
 
 .hero-risk {
-  font-size: 16px;
+  font-size: 20px !important;
   color: var(--text-light);
   padding: 12px 16px;
   background: rgba(166, 140, 84, 0.06);
@@ -401,7 +402,7 @@ nav.scrolled {
 }
 
 .trust-bar-inner {
-  max-width: 1200px;
+  max-width: 90%;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -430,7 +431,7 @@ nav.scrolled {
 }
 
 .section-inner {
-  max-width: 1200px;
+  max-width: 90%;
   margin: 0 auto;
 }
 
@@ -541,7 +542,7 @@ nav.scrolled {
 }
 
 .service-card .service-sub {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -766,7 +767,7 @@ nav.scrolled {
   border: none;
   outline: none;
   background: transparent;
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 16px;
   font-weight: 500;
   color: var(--dark);
@@ -816,7 +817,7 @@ nav.scrolled {
 .calc-range-labels {
   display: flex;
   justify-content: space-between;
-  font-size: 11px;
+  font-size: 14px;
   color: var(--text-light);
   margin-top: -4px;
 }
@@ -833,7 +834,7 @@ nav.scrolled {
   padding: 11px 16px;
   border: none;
   background: var(--off-white);
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 13.5px;
   font-weight: 500;
   color: var(--text-light);
@@ -863,7 +864,7 @@ nav.scrolled {
 }
 
 .calc-results-label {
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -881,7 +882,7 @@ nav.scrolled {
 }
 
 .calc-repayment-note {
-  font-size: 12px;
+  font-size: 16px;
   color: rgba(255, 255, 255, 0.4);
 }
 
@@ -980,7 +981,7 @@ nav.scrolled {
   color: white;
   border: none;
   padding: 14px 28px;
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.02em;
@@ -1215,7 +1216,7 @@ nav.scrolled {
 }
 
 .cta-strip-inner {
-  max-width: 1200px;
+  max-width: 90%;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -1245,7 +1246,7 @@ nav.scrolled {
   color: white;
   border: none;
   padding: 16px 36px;
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 15px;
   font-weight: 500;
   letter-spacing: 0.02em;
@@ -1272,7 +1273,7 @@ footer {
 }
 
 .footer-inner {
-  max-width: 1200px;
+  max-width: 90%;
   margin: 0 auto;
 }
 
@@ -1315,7 +1316,7 @@ footer {
 
 .footer-logo-text span:last-child {
   display: block;
-  font-size: 10px;
+  font-size: 14px;
   font-weight: 500;
   color: var(--gold);
   letter-spacing: 0.12em;
@@ -1329,7 +1330,7 @@ footer {
 }
 
 .footer-col h4 {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -1387,7 +1388,7 @@ footer {
 }
 
 .page-hero-inner {
-  max-width: 1200px;
+  max-width: 90%;
   margin: 0 auto;
   padding: 70px 32px 60px;
   position: relative;
@@ -1399,9 +1400,11 @@ footer {
 }
 
 .page-hero-inner h1 {
-  font-size: clamp(36px, 4.5vw, 58px);
+  /* font-size: clamp(36px, 4.5vw, 58px); */
+  font-size: 3rem !important;
   font-weight: 500;
-  color: var(--dark);
+  /* color: var(--dark); */
+  color: white;
   line-height: 1.1;
   margin-bottom: 20px;
   max-width: 680px;
@@ -1409,7 +1412,8 @@ footer {
 
 .page-hero-inner p {
   font-size: 16px;
-  color: var(--text-light);
+  /* color: var(--text-light); */
+  color: white;
   max-width: 560px;
   line-height: 1.75;
 }
@@ -1417,6 +1421,7 @@ footer {
 .page-hero-wave {
   height: 60px;
   width: 100%;
+  display: none;
 }
 
 /* INFO BLOCK */
@@ -1532,7 +1537,7 @@ footer {
 }
 
 .disclaimer {
-  font-size: 14px;
+  font-size: 16px;
   color: var(--text-light);
   font-style: italic;
   margin-top: 20px;
@@ -1621,7 +1626,7 @@ footer {
 
 .form-group label {
   display: block;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -1636,7 +1641,7 @@ footer {
   padding: 12px 16px;
   border: 1.5px solid var(--border);
   border-radius: 6px;
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 16px;
   color: var(--text);
   background: var(--off-white);
@@ -1718,6 +1723,10 @@ footer {
   font-size: 16px;
   color: var(--dark);
   font-weight: 500;
+
+  a {
+    color: var(--dark);
+  }
 }
 
 .reg-box {
@@ -1951,9 +1960,9 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'DM Sans', sans-serif !important;
+  font-family: 'Poppins', sans-serif;
 }
 
-*p {
-  font-size: 16px !important;
+* {
+  font-size: 20px !important;
 }
