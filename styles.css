@@ -1864,6 +1864,15 @@ footer {
 }
 
 @media (max-width: 768px) {
+  .nav-logo-mark {
+    width: 120px;
+  }
+
+  .footer-logo-mark {
+    width: 200px;
+    height: auto;
+  }
+
   .nav-links {
     display: none;
   }
@@ -1875,7 +1884,7 @@ footer {
   }
   .hero-stats {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
   .hero-bg-pattern,
   .hero-bg-dots {
