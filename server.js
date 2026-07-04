@@ -40,7 +40,7 @@ const server = http.createServer((req, res) => {
   const pathname = parsedUrl.pathname;
 
   // API Endpoints
-  if (pathname === '/api/reviews') {
+  if (pathname === '/api/reviews' || pathname === '/reviews.php') {
     if (req.method === 'GET') {
       fs.readFile(REVIEWS_FILE, 'utf8', (err, data) => {
         if (err) {

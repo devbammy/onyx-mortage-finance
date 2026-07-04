@@ -1,1 +1,23 @@
-[]
+[
+  {
+    "name": "Lee",
+    "location": "Bristol",
+    "rating": 5,
+    "text": "Onyx Mortgage Finance found us some excellent deals, saving us over £200 a month without affecting our term. The advice was clear, and the process was effortless. We couldn't recommend them more highly.",
+    "date": "2026-06-15"
+  },
+  {
+    "name": "Katie",
+    "location": "Yate",
+    "rating": 5,
+    "text": "A huge thank you for all the help, time and support over the past year — from selling my old place to finding a mortgage well within budget. The whole process was made so much easier. I'll be back when my deal expires.",
+    "date": "2026-05-20"
+  },
+  {
+    "name": "Emma & Dan",
+    "location": "Monmouth",
+    "rating": 5,
+    "text": "We always felt supported and in safe hands, with every question — no matter how small — answered promptly and clearly. We would strongly recommend Onyx Mortgage Finance to anyone seeking a broker they can trust.",
+    "date": "2026-04-10"
+  }
+]

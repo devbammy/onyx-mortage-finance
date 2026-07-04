@@ -158,7 +158,7 @@ function initReviews() {
   async function loadReviews() {
     try {
       // Step 1: Try server API endpoint
-      const response = await fetch('/api/reviews');
+      const response = await fetch('reviews.php');
       if (!response.ok) throw new Error('API not available');
       loadedReviews = await response.json();
     } catch (apiError) {
@@ -206,7 +206,7 @@ function initReviews() {
     let submittedOnServer = false;
 
     try {
-      const postResponse = await fetch('/api/reviews', {
+      const postResponse = await fetch('reviews.php', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(reviewData)
