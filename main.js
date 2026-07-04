@@ -63,7 +63,7 @@ function initReviews() {
       selectedRating = val;
       ratingInput.value = val;
       ratingDisplay.textContent = `${val} out of 5 stars`;
-      
+
       starBtns.forEach((s, idx) => {
         if (idx < val) s.classList.add('selected');
         else s.classList.remove('selected');
@@ -78,48 +78,29 @@ function initReviews() {
   });
 
   // Fetch and Render Reviews
-  const defaultReviews = [
-    {
-      name: "Lee",
-      location: "Bristol",
-      rating: 5,
-      text: "Onyx Mortgage Finance found us some excellent deals, saving us over £200 a month without affecting our term. The advice was clear, and the process was effortless. We couldn't recommend them more highly.",
-      date: "2026-06-15"
-    },
-    {
-      name: "Katie",
-      location: "Yate",
-      rating: 5,
-      text: "A huge thank you for all the help, time and support over the past year — from selling my old place to finding a mortgage well within budget. The whole process was made so much easier. I'll be back when my deal expires.",
-      date: "2026-05-20"
-    },
-    {
-      name: "Emma & Dan",
-      location: "Monmouth",
-      rating: 5,
-      text: "We always felt supported and in safe hands, with every question — no matter how small — answered promptly and clearly. We would strongly recommend Onyx Mortgage Finance to anyone seeking a broker they can trust.",
-      date: "2026-04-10"
-    }
-  ];
+  const defaultReviews = [];
 
   let loadedReviews = [];
 
   function renderReviews() {
     reviewsContainer.innerHTML = '';
-    
+
     // Combine fetched / default reviews with any local-only storage reviews
-    const localReviews = JSON.parse(localStorage.getItem('onyx_local_reviews') || '[]');
+    const localReviews = JSON.parse(
+      localStorage.getItem('onyx_local_reviews') || '[]',
+    );
     const allReviews = [...loadedReviews, ...localReviews];
 
     if (allReviews.length === 0) {
-      reviewsContainer.innerHTML = '<div style="grid-column: 1/-1; text-align: center; padding: 20px; color: var(--text-light);">No reviews yet. Be the first to leave one!</div>';
+      reviewsContainer.innerHTML =
+        '<div style="grid-column: 1/-1; text-align: center; padding: 20px; color: var(--text-light);">No reviews yet. Be the first to leave one!</div>';
       return;
     }
 
     allReviews.forEach((review) => {
       const card = document.createElement('div');
       card.className = `testimonial-card ${review.newlyAdded ? 'newly-added' : ''}`;
-      
+
       // Build stars SVG string
       let starsHTML = '';
       for (let i = 1; i <= 5; i++) {
@@ -133,7 +114,9 @@ function initReviews() {
       }
 
       // Initial / Avatar letter
-      const initial = review.name ? review.name.trim().charAt(0).toUpperCase() : 'U';
+      const initial = review.name
+        ? review.name.trim().charAt(0).toUpperCase()
+        : 'U';
 
       card.innerHTML = `
         <div class="stars">${starsHTML}</div>
@@ -162,14 +145,20 @@ function initReviews() {
       if (!response.ok) throw new Error('API not available');
       loadedReviews = await response.json();
     } catch (apiError) {
-      console.warn('API fetch failed, falling back to static reviews.json file.', apiError);
+      console.warn(
+        'API fetch failed, falling back to static reviews.json file.',
+        apiError,
+      );
       try {
         // Step 2: Try fetching reviews.json file directly
         const fileResponse = await fetch('reviews.json');
         if (!fileResponse.ok) throw new Error('reviews.json file not found');
         loadedReviews = await fileResponse.json();
       } catch (fileError) {
-        console.error('Static JSON file fetch failed, falling back to built-in default reviews.', fileError);
+        console.error(
+          'Static JSON file fetch failed, falling back to built-in default reviews.',
+          fileError,
+        );
         // Step 3: Use hardcoded default reviews
         loadedReviews = defaultReviews;
       }
@@ -184,7 +173,7 @@ function initReviews() {
     const name = document.getElementById('review-name').value.trim();
     const location = document.getElementById('review-location').value.trim();
     const text = document.getElementById('review-text').value.trim();
-    
+
     if (!selectedRating) {
       alert('Please select a star rating.');
       return;
@@ -193,14 +182,15 @@ function initReviews() {
     const submitBtn = document.getElementById('btn-submit-review');
     const originalBtnText = submitBtn.innerHTML;
     submitBtn.disabled = true;
-    submitBtn.innerHTML = 'Submitting... <span style="display:inline-block; width:12px; height:12px; border:2px solid #fff; border-radius:50%; border-top-color:transparent; animation: spin 0.8s linear infinite;"></span>';
+    submitBtn.innerHTML =
+      'Submitting... <span style="display:inline-block; width:12px; height:12px; border:2px solid #fff; border-radius:50%; border-top-color:transparent; animation: spin 0.8s linear infinite;"></span>';
 
     const reviewData = {
       name,
       location,
       rating: selectedRating,
       text,
-      date: new Date().toISOString().split('T')[0]
+      date: new Date().toISOString().split('T')[0],
     };
 
     let submittedOnServer = false;
@@ -209,7 +199,7 @@ function initReviews() {
       const postResponse = await fetch('reviews.php', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(reviewData)
+        body: JSON.stringify(reviewData),
       });
 
       if (postResponse.ok) {
@@ -220,12 +210,17 @@ function initReviews() {
         loadedReviews.push(newReviewFromServer);
       }
     } catch (err) {
-      console.warn('Could not post review to server. Falling back to local storage saving.', err);
+      console.warn(
+        'Could not post review to server. Falling back to local storage saving.',
+        err,
+      );
     }
 
     if (!submittedOnServer) {
       // Fallback: Save to LocalStorage
-      const localReviews = JSON.parse(localStorage.getItem('onyx_local_reviews') || '[]');
+      const localReviews = JSON.parse(
+        localStorage.getItem('onyx_local_reviews') || '[]',
+      );
       const localReviewItem = { ...reviewData, newlyAdded: true };
       localReviews.push(localReviewItem);
       localStorage.setItem('onyx_local_reviews', JSON.stringify(localReviews));
